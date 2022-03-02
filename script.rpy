@@ -38,15 +38,15 @@ label bgm:
 
     stop music
 
-    play music "audio/02. Normal Days indeed.mp3" fadein 1.0
+    play music "audio/02. Normal Days indeed.mp3" fadein 3.0 fadeout 3.0
 
     scene bg 1
 
     show smormu norm
 
-    S "Anyway! Let's start our DATE!"
+    S "Anyway, let's start our DATE!"
 
-    S "Let's go to a better place!"
+    S "Come on! I'll take us to a cool spot in town!"
 
     scene bg 2
     show smormu norm
@@ -63,17 +63,23 @@ label bgm:
             jump choices1_b
 
     label choices1_a:
-        S "Alright let's go fight then!"
-        jump choices1_common
+        S "Alright, let's go fight then!"
+        jump choices1_fight
 
     label choices1_b:
-        S "Alright let's have a picnic then!"
-        jump choices1_common
+        S "Alright, let's have a picnic then!"
+        jump choices1_picnic
 
 
-    label choices1_common:
+    label choices1_fight:
 
     S "LOL"
+
+    return
+
+    label choices1_picnic:
+
+    S "LOL2"
 
 
 
